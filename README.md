@@ -14,6 +14,12 @@ Apple Silicon Macs only (M1 or newer).
 2. Open **Bridge AI** from Applications. macOS will refuse the first time, because the app isn't signed with an Apple Developer ID.
 3. Open **System Settings → Privacy & Security**, scroll down to the message about Bridge AI, and click **Open Anyway**. Confirm once more.
 
+If macOS instead says the app "is damaged and can't be opened", drag it to Applications first, then run this once in Terminal:
+
+```
+xattr -dr com.apple.quarantine "/Applications/Bridge AI.app"
+```
+
 You only do this once. After that the app opens normally.
 
 ## Updates
